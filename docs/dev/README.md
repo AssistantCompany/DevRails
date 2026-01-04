@@ -6,13 +6,13 @@
 
 <p align="center">
   <b>Keep your development on track.</b><br>
-  A portable, AI-first development standards package that automates workflows and keeps teams consistent.
+  A portable development standards package for <b>Claude Code</b> that automates workflows and keeps teams consistent.
 </p>
 
 <p align="center">
   <a href="#quick-start"><img src="https://img.shields.io/badge/Get%20Started-2%20minutes-brightgreen?style=flat-square" alt="Get Started"></a>
   <a href="LICENSE"><img src="https://img.shields.io/badge/License-MIT-blue?style=flat-square" alt="License: MIT"></a>
-  <a href="#compatibility"><img src="https://img.shields.io/badge/AI-Powered-purple?style=flat-square" alt="AI-Powered"></a>
+  <a href="#requirements"><img src="https://img.shields.io/badge/Requires-Claude%20Code-blueviolet?style=flat-square" alt="Requires Claude Code"></a>
   <a href="CONTRIBUTING.md"><img src="https://img.shields.io/badge/PRs-Welcome-brightgreen?style=flat-square" alt="PRs Welcome"></a>
 </p>
 
@@ -21,8 +21,32 @@
   <a href="#quick-start">Quick Start</a> •
   <a href="#features">Features</a> •
   <a href="#commands">Commands</a> •
-  <a href="#compatibility">Compatibility</a>
+  <a href="#requirements">Requirements</a>
 </p>
+
+---
+
+## Requirements
+
+> **DevRails requires [Claude Code](https://claude.ai/code)** - Anthropic's official AI coding assistant.
+
+| Requirement | Status | Notes |
+|-------------|--------|-------|
+| **Claude Code** | **Required** | Slash commands and proactive skills are Claude Code specific |
+| **Git** | Required | Version control |
+| **GitHub/GitLab** | Required | For PR integration |
+
+### Why Claude Code?
+
+DevRails uses Claude Code's native features:
+
+| Feature | Location | What It Does |
+|---------|----------|--------------|
+| **Slash Commands** | `.claude/commands/` | `/fix`, `/feature`, `/pr`, `/commit`, `/review`, `/status` |
+| **Proactive Skills** | `.claude/skills/` | Auto-triggers on keywords, warns on main branch |
+| **AI Memory** | `.claude/MEMORIES.md` | Persistent instructions across sessions |
+
+> **Note:** The documentation in `docs/dev/` (workflows, glossary, templates) can be read by any AI assistant for reference, but the automated slash commands require Claude Code.
 
 ---
 
@@ -40,7 +64,7 @@ Developer:  *spends 30 minutes figuring it out*
 ```
 Developer: /fix login authentication error
 
-DevRails:  Creating bugfix/login-authentication-error branch...
+Claude:    Creating bugfix/login-authentication-error branch...
            [fixes issue, adds test, commits properly]
            Ready for PR. Run /pr to create it.
 ```
@@ -51,7 +75,7 @@ DevRails:  Creating bugfix/login-authentication-error branch...
 
 ## What is DevRails?
 
-**DevRails** is a drop-in development standards package that works with AI coding assistants to automate your workflows.
+**DevRails** is a drop-in development standards package that works with Claude Code to automate your workflows.
 
 Instead of reading thousands of lines of documentation, you just use simple commands:
 
@@ -61,7 +85,7 @@ Instead of reading thousands of lines of documentation, you just use simple comm
 /pr                     # Opens PR with proper template
 ```
 
-**The AI handles the complexity. You just describe what you want.**
+**Claude handles the complexity. You just describe what you want.**
 
 ---
 
@@ -71,16 +95,16 @@ Instead of reading thousands of lines of documentation, you just use simple comm
 
 ```bash
 # Clone DevRails
-git clone https://github.com/YOUR_ORG/devrails.git
+git clone https://github.com/AssistantCompany/DevRails.git
 
 # Copy to your organization
-cp -r devrails/docs/dev /path/to/your/org/docs/dev
-cp -r devrails/.claude /path/to/your/org/.claude
+cp -r DevRails/docs/dev /path/to/your/org/docs/dev
+cp -r DevRails/.claude /path/to/your/org/.claude
 ```
 
 ### 2. Use (immediately)
 
-Open your AI coding assistant and start using commands:
+Open Claude Code in your org directory and start using commands:
 
 ```
 /status                 # See where you are
@@ -118,33 +142,13 @@ Just describe what you want:
 
 | Feature | Description |
 |---------|-------------|
-| **Simple Commands** | 6 slash commands replace 3,700 lines of docs |
-| **Proactive Guidance** | AI warns if you're on main, suggests correct branch names |
+| **Simple Commands** | 6 slash commands replace reading documentation |
+| **Proactive Guidance** | Claude warns if you're on main, suggests correct branch names |
 | **Conventional Commits** | Automatic formatting of commit messages |
 | **PR Automation** | Creates PRs with templates and issue linking |
 | **Code Review Checklist** | Built-in standards for security, tests, quality |
 | **Portable** | Drop on any server, works immediately |
 | **Brownfield-Safe** | Merges with existing projects, never overwrites |
-
----
-
-## Compatibility
-
-### Supported AI Assistants
-
-| Assistant | Status | Notes |
-|-----------|--------|-------|
-| **Claude Code** | ✅ Full Support | Primary development target |
-| **OpenAI Codex** | ✅ Compatible | Reads standards, follows workflows |
-| **Cursor** | ✅ Compatible | Works with .cursor rules |
-| **GitHub Copilot Chat** | ⚡ Partial | May need manual command invocation |
-| **Other AI Assistants** | ⚡ Varies | Any assistant that reads markdown |
-
-### Requirements
-
-- Git-based version control
-- GitHub (or GitLab/Bitbucket) for PR integration
-- AI coding assistant (see above)
 
 ---
 
@@ -188,19 +192,19 @@ docs/dev/
 
 ### Before DevRails
 
-- 📚 30-40 minutes reading documentation before your first commit
-- 🤷 Everyone does things differently
-- 🔄 Reinvent processes for every new project
-- 😵 AI assistants don't know your conventions
-- 📝 Standards exist but nobody reads them
+- 30-40 minutes reading documentation before your first commit
+- Everyone does things differently
+- Reinvent processes for every new project
+- AI assistants don't know your conventions
+- Standards exist but nobody reads them
 
 ### After DevRails
 
-- ⚡ **Instant** - Just use `/fix` or `/feature`
-- 🎯 **Consistent** - Everyone follows the same workflow
-- 🔧 **Automated** - AI handles the complexity
-- 📦 **Portable** - Works on any server
-- 🧠 **AI-First** - Built for AI coding assistants
+- **Instant** - Just use `/fix` or `/feature`
+- **Consistent** - Everyone follows the same workflow
+- **Automated** - Claude handles the complexity
+- **Portable** - Works on any server
+- **Claude Code Native** - Built specifically for Claude Code
 
 ---
 
@@ -237,7 +241,7 @@ DevRails handles both **greenfield** (new) and **brownfield** (existing) project
 1. **One branch = one PR = one unit of work**
 2. **PR is the container**, not the problem
 3. **Simple commands**, complex workflows underneath
-4. **AI-first** - designed for AI assistants to read and follow
+4. **Claude Code native** - built for Claude's features
 5. **Portable** - works on any server with relative paths
 6. **Brownfield-safe** - merges, never overwrites
 
@@ -259,6 +263,8 @@ MIT License - see [LICENSE](./LICENSE) for details.
   <br>
   <b>DevRails</b><br>
   Keep your development on track.
+  <br><br>
+  Built for <a href="https://claude.ai/code">Claude Code</a>
   <br><br>
   <a href="#quick-start">Get Started →</a>
 </p>
