@@ -1,0 +1,110 @@
+# [Organization Name] Development Standards
+
+> Organization-level guidance for AI-assisted development.
+> Powered by **DevRails** - Keep your development on track.
+
+## Quick Start: DevRails Commands
+
+Use these commands in your AI coding assistant:
+
+| Command | What It Does |
+|---------|--------------|
+| `/fix <description>` | Start bugfix workflow |
+| `/feature <description>` | Start feature workflow |
+| `/pr` | Create pull request |
+| `/commit` | Format commit message |
+| `/review` | Code review checklist |
+| `/status` | Show state, suggest next |
+
+---
+
+## Standards Location
+
+Before working on any project, review:
+
+1. **DevRails**: [./docs/dev/](./docs/dev/README.md)
+2. **Commands**: [./docs/dev/COMMANDS.md](./docs/dev/COMMANDS.md)
+3. **Glossary**: [./docs/dev/definitions/glossary.md](./docs/dev/definitions/glossary.md)
+4. **Workflows**: [./docs/dev/standards/](./docs/dev/standards/)
+
+---
+
+## Quick Reference
+
+### For Bug Fixes
+Use `/fix <description>` or follow the [Defect Workflow](./docs/dev/standards/defect-workflow.md):
+1. Create `bugfix/issue-XXX-description` branch
+2. Fix + add regression test
+3. Commit with `fix:` prefix
+4. PR with `Fixes #XXX`
+
+### For Features
+Use `/feature <description>` or follow the [PR Workflow](./docs/dev/standards/pull-request-workflow.md):
+1. Create `feature/<description>` branch
+2. Implement + add tests
+3. Commit with `feat:` prefix
+4. Open PR
+
+### Terminology
+Use consistent terms from the [Glossary](./docs/dev/definitions/glossary.md):
+- **PR** = Pull Request (container for changes)
+- **Defect** = Bug (broken functionality)
+- **Feature** = New capability
+
+---
+
+## Auto-Integration Rule
+
+When creating a new project or working in a project without a CLAUDE.md:
+
+1. Create `CLAUDE.md` using template from [./docs/dev/templates/project-claude-md.template](./docs/dev/templates/project-claude-md.template)
+2. Add DevRails breadcrumb section
+3. Ensure project follows all org standards
+
+---
+
+## Projects Location
+
+All projects live in `./projects/`:
+
+| Project | Path | Description |
+|---------|------|-------------|
+| example-app | `./projects/example-app/` | Example application |
+<!-- Add your projects here -->
+
+---
+
+## Key Principles
+
+1. **One branch = one PR = one unit of work**
+2. **PR is the container**, not the problem
+3. **Use DevRails commands** for consistency
+4. **Use glossary terms** for clarity
+5. **Link PRs to issues** when applicable
+
+---
+
+## DevRails Package
+
+```
+docs/dev/
+├── README.md              # Start here
+├── COMMANDS.md            # All commands
+├── standards/             # How we work
+├── definitions/           # What things mean
+├── templates/             # Reusable formats
+└── decisions/             # Why we decided
+
+.claude/
+├── commands/              # Slash commands
+├── skills/                # Proactive AI
+└── MEMORIES.md            # AI memory
+```
+
+For new server setup, see [./docs/dev/SETUP.md](./docs/dev/SETUP.md).
+
+---
+
+<p align="center">
+  <b>DevRails</b> - Keep your development on track.
+</p>

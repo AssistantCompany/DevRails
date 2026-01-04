@@ -1,0 +1,122 @@
+# CLAUDE.md
+
+> Project-specific guidance for AI coding assistants.
+> Customize this template for your project.
+
+## Organization Standards (DevRails)
+
+This project follows DevRails development standards.
+
+### Commands
+| Command | What It Does |
+|---------|--------------|
+| `/fix <description>` | Start bugfix workflow |
+| `/feature <description>` | Start feature workflow |
+| `/pr` | Create pull request |
+| `/commit` | Format commit message |
+| `/review` | Code review checklist |
+| `/status` | Show state, suggest next |
+
+### Quick Links
+- [DevRails](../../docs/dev/README.md) - Main documentation
+- [Commands](../../docs/dev/COMMANDS.md) - Full command reference
+- [Glossary](../../docs/dev/definitions/glossary.md) - Terminology
+- [PR Workflow](../../docs/dev/standards/pull-request-workflow.md) - Pull requests
+- [Defect Workflow](../../docs/dev/standards/defect-workflow.md) - Bug fixes
+
+### Key Principles
+- One branch = one PR = one unit of work
+- PR is the container for changes, not the problem itself
+- Use DevRails commands for consistent workflows
+- Use conventional commits: feat:, fix:, docs:, chore:
+
+---
+
+## Project Overview
+
+<!-- Brief description of what this project does -->
+
+## Tech Stack
+
+<!-- List technologies used -->
+- **Frontend:**
+- **Backend:**
+- **Database:**
+- **Infrastructure:**
+
+## Build & Development
+
+### Prerequisites
+<!-- What needs to be installed -->
+
+### Development
+```bash
+# Install dependencies
+
+# Start development server
+
+# Run tests
+
+```
+
+### Production
+```bash
+# Build for production
+
+# Deploy
+
+```
+
+## Architecture
+
+<!-- Key architectural decisions and patterns -->
+
+### Directory Structure
+```
+project/
+├── src/
+├── tests/
+└── ...
+```
+
+### Key Files
+| File | Purpose |
+|------|---------|
+| | |
+
+## Environment Variables
+
+| Variable | Description | Required |
+|----------|-------------|----------|
+| | | |
+
+## Common Tasks
+
+### Running Tests
+```bash
+
+```
+
+### Database Migrations
+```bash
+
+```
+
+### Deployment
+```bash
+
+```
+
+## Troubleshooting
+
+### Common Issues
+
+#### Issue Name
+**Symptom:**
+**Solution:**
+
+---
+
+## Project-Specific Standards
+
+<!-- Any standards specific to this project that differ from org defaults -->
