@@ -1,11 +1,11 @@
 # [Organization Name] Development Standards
 
-> Organization-level guidance for AI-assisted development.
+> Organization-level guidance for Claude Code.
 > Powered by **DevRails** - Keep your development on track.
 
 ## Quick Start: DevRails Commands
 
-Use these commands in your AI coding assistant:
+Use these commands in Claude Code:
 
 | Command | What It Does |
 |---------|--------------|
@@ -106,5 +106,6 @@ For new server setup, see [./docs/dev/SETUP.md](./docs/dev/SETUP.md).
 ---
 
 <p align="center">
-  <b>DevRails</b> - Keep your development on track.
+  <b>DevRails</b> - Keep your development on track.<br>
+  Built for <a href="https://claude.ai/code">Claude Code</a>
 </p>

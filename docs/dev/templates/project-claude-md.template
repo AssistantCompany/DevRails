@@ -1,11 +1,11 @@
 # CLAUDE.md
 
-> Project-specific guidance for AI coding assistants.
+> Project-specific guidance for Claude Code.
 > Customize this template for your project.
 
 ## Organization Standards (DevRails)
 
-This project follows DevRails development standards.
+This project follows DevRails development standards (requires [Claude Code](https://claude.ai/code)).
 
 ### Commands
 | Command | What It Does |
